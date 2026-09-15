@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE VAULT</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#07090d;color:#f3f3f3;font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+header{position:sticky;top:0;z-index:20;background:rgba(7,9,13,.9);backdrop-filter:blur(14px);border-bottom:1px solid #242933;padding:18px 6%}
+.nav{max-width:1250px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:18px;font-weight:900;letter-spacing:5px}
+nav{display:flex;gap:28px}
+nav a{color:#9fa6b2;text-decoration:none;font-size:13px;letter-spacing:1px}
+nav a:hover{color:#fff}
+.hero{min-height:78vh;display:flex;align-items:center;padding:80px 6%;background:radial-gradient(circle at 75% 30%,#1a202c 0,#07090d 48%)}
+.hero-inner{max-width:1250px;margin:auto;width:100%}
+.kicker{color:#7e8795;letter-spacing:4px;font-size:12px}
+h1{font-size:clamp(60px,13vw,170px);line-height:.82;letter-spacing:-7px;margin:20px 0}
+.tagline{font-size:21px;color:#b4bac4}
+.actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;color:#fff;background:#151a22;border:1px solid #363d49;padding:13px 19px;border-radius:8px}
+.btn:hover{border-color:#8a919d}
+.section{max-width:1250px;margin:auto;padding:85px 6%}
+.section-title{font-size:12px;color:#727b89;letter-spacing:3px;text-transform:uppercase;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{position:relative;min-height:260px;padding:30px;background:linear-gradient(145deg,#11151c,#0a0d12);border:1px solid #252b35;border-radius:14px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#505966}
+.card-number{color:#59616e;font-size:12px}
+.card h3{font-size:25px;margin:45px 0 12px}
+.card p{color:#9da5b1;font-size:14px}
+.read{position:absolute;bottom:27px;left:30px;color:#fff;text-decoration:none;font-size:13px;letter-spacing:1px}
+.featured{background:#0d1117;border-top:1px solid #202630;border-bottom:1px solid #202630}
+.featured h2{font-size:clamp(35px,6vw,75px);line-height:1;margin-bottom:20px}
+.featured p{max-width:700px;color:#a8afb9}
+.about{color:#aeb5c0;max-width:760px}
+footer{border-top:1px solid #202630;padding:30px 6%;color:#666;text-align:center}
+@media(max-width:800px){.grid{grid-template-columns:1fr}h1{letter-spacing:-4px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">THE VAULT</div>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#stories">STORIES</a>
+      <a href="#about">ABOUT</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="kicker">ORIGINAL STORIES & WORLDS</div>
+    <h1>THE VAULT</h1>
+    <p class="tagline">Stories • Worlds • Legends</p>
+    <div class="actions">
+      <a class="btn" href="#stories">EXPLORE</a>
+      <a class="btn" href="global-outbreak.html">ENTER THE VAULT</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="stories">
+  <div class="section-title">The Archive</div>
+  <div class="grid">
+    <article class="card">
+      <span class="card-number">001</span>
+      <h3>GLOBAL OUTBREAK</h3>
+      <p>A mysterious outbreak spreads across the world, changing everything.</p>
+      <a class="read" href="global-outbreak.html">READ STORY →</a>
+    </article>
+
+    <article class="card">
+      <span class="card-number">002</span>
+      <h3>THE STRONGEST</h3>
+      <p>A world of powers, rankings, rivalries and legends.</p>
+      <a class="read" href="#stories">COMING SOON →</a>
+    </article>
+
+    <article class="card">
+      <span class="card-number">003</span>
+      <h3>CLASSIFIED</h3>
+      <p>Some stories are better left behind locked doors.</p>
+      <a class="read" href="#stories">CLASSIFIED →</a>
+    </article>
+  </div>
+</section>
+
+<section class="section featured">
+  <div class="section-title">Featured World</div>
+  <h2>GLOBAL OUTBREAK</h2>
+  <p>A global story of infection, survival, mystery and the moment the world begins to break.</p>
+  <div class="actions">
+    <a class="btn" href="global-outbreak.html">OPEN ARCHIVE →</a>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-title">About The Vault</div>
+  <p class="about">THE VAULT is an archive for original stories, worlds, characters and ideas. Every world starts as an idea. Here, it becomes a story.</p>
+</section>
+
+<footer>THE VAULT • ORIGINAL STORIES & WORLDS</footer>
+
+</body>
+</html>
